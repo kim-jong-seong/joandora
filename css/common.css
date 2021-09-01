@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+
+/* 초기화 */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+address {
+    font-style: normal;
+}
+.hidden {
+    display: none;
+}
+
+body {
+    background: linear-gradient(180deg, #87ceeb 0%, #fefeff 100%) no-repeat;
+}
+
+/* 헤더 */
+
+#header {
+    width: 962px; height: 341px;
+    margin: 10px auto 0;
+}
+#header h1 {
+    height: 240px;
+    background: url(../images/bg_header.png) no-repeat;
+    padding: 40px 0 0 34px;
+    font-size: 50px;
+    color: rgb(255, 255, 0);
+}
+
+#gnb {
+    
+}
+#gnb ul {
+
+}
+#gnb li {
+    float: left;
+    width: 25%; height: 62px;
+    text-align: center;
+}
+#gnb li a {
+    display: block;
+    width: 100%; height: 100%;
+    background: #006600;
+    color: #fff;
+    line-height: 62px;
+}
+#header::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* 콘텐츠 */
+
+#content {
+    width: 962px; height: 392px;
+    margin: 0 auto;
+}
+#content > section {
+    float: left;
+}
+
+
+/* 소개 */
+
+#introduce {
+    width: 730px;
+    background: #fff;
+    padding: 30px 0 0 12px;
+}
+#introduce h2 {
+    margin-bottom: 22px;
+}
+#introduce p {
+    margin-bottom: 20px;
+    font-size: 0.9em;
+}
+#introduce p:nth-of-type(1) {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+#picture {
+    width: 220px;
+    background: #ddffdd;
+}
+#picture figure > img {
+    margin: 4px 10px;
+}
+#picture figure img:nth-of-type(1) {
+    margin-top: 22px;
+}
+#picture::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* 푸터 */
+
+#footer {
+    width: 962px; height: 72px;
+    margin: 0 auto;
+    text-align: center;
+    background: #061f1f;
+    color: #fff;
+    font-size: 14px;
+}
+#footer address {
+    padding-top: 19px;
+}
